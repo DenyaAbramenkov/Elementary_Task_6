@@ -67,16 +67,13 @@ namespace Elementary_Task_6.UI
             return result;
         }
 
-
-
         public static void Instruction()
         {
-            Console.WriteLine("Specify the path to the file with the workmode"
+            Console.WriteLine("Specify the path to the file with the workmode" 
                               + Environment.NewLine
                               + "After correct choosing of Method input range of Tickets to check"
                               + Environment.NewLine
-                              + "In case leftborder = rightborder, we chack ticket with that number");
-                              
+                              + "In case leftborder = rightborder, we chack ticket with that number");           
         }
     }
 }

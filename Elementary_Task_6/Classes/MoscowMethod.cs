@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Elementary_Task_6
 {
-    class MoscowMethod : HappyTickets
+    public class MoscowMethod : HappyTickets
     {
         private MoscowMethod(int LeftBorder, int RightBorder) : base(LeftBorder, RightBorder)
         { }
@@ -18,7 +18,7 @@ namespace Elementary_Task_6
             }
             else
             {
-                throw new Exception("");
+                throw new ArgumentException("Wrong borders!");
             }
         }
 

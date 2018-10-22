@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Elementary_Task_6
 {
-    class PiterMethod : HappyTickets
+    public class PiterMethod : HappyTickets
     {
         private PiterMethod(int LeftBorder, int RightBorder) : base(LeftBorder, RightBorder)
         { }
@@ -19,7 +19,7 @@ namespace Elementary_Task_6
             }
             else
             {
-                throw new Exception("");
+                throw new ArgumentException("Wrong borders!");
             }
         }
 

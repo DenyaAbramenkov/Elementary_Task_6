@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace Elementary_Task_6
 {
-    abstract class HappyTickets
+    public abstract class HappyTickets
     {
         public List<Ticket> HappyTicketsInRange;
         public int LeftBorder { get; set; }
@@ -26,11 +26,11 @@ namespace Elementary_Task_6
         {
             if (leftBorder < 0 || rightBorder < 0)
             {
-                throw new Exception("Incorect input of borders");
+                throw new ArgumentException("Incorect input of borders");
             }
             if (leftBorder > rightBorder)
             {
-                throw new Exception("Left border should be less or equal RightBorder");
+                throw new ArgumentException("Left border should be less or equal RightBorder");
             }
             else
             {
